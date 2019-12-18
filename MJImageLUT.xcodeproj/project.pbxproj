@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7B0137C023A9A30C00BF80D6 /* MJImageLUT.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B0137BE23A9A30C00BF80D6 /* MJImageLUT.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B0137DC23A9A57300BF80D6 /* LUT+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0137DB23A9A57300BF80D6 /* LUT+UIImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7B0137BB23A9A30C00BF80D6 /* MJImageLUT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJImageLUT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B0137BE23A9A30C00BF80D6 /* MJImageLUT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJImageLUT.h; sourceTree = "<group>"; };
 		7B0137BF23A9A30C00BF80D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B0137DB23A9A57300BF80D6 /* LUT+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LUT+UIImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		7B0137BD23A9A30C00BF80D6 /* MJImageLUT */ = {
 			isa = PBXGroup;
 			children = (
+				7B0137DB23A9A57300BF80D6 /* LUT+UIImage.swift */,
 				7B0137BE23A9A30C00BF80D6 /* MJImageLUT.h */,
 				7B0137BF23A9A30C00BF80D6 /* Info.plist */,
 			);
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					7B0137BA23A9A30C00BF80D6 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B0137DC23A9A57300BF80D6 /* LUT+UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		7B0137C423A9A30C00BF80D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QBJR4H3T2D;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mejdej.MJImageLUT;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		7B0137C523A9A30C00BF80D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QBJR4H3T2D;
